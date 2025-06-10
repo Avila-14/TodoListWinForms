@@ -37,10 +37,10 @@ namespace TodoListWinForms.Logic
         {
             // Verifica que el índice sea válido y que la nueva descripción no esté vacía.
             if (index >= 0 && index < Tareas.Count && !string.IsNullOrWhiteSpace(nuevaDescripcion))
-                {
+            {
                     Tareas[index].Descripcion = nuevaDescripcion;
-                    // Notifica a cualquier control de UI enlazado que este elemento ha cambiado.
-                    Tareas.ResetItem(index);
+                // Notifica a cualquier control de UI enlazado que este elemento ha cambiado.
+                Tareas.ResetItem(index);
             }
         }
 

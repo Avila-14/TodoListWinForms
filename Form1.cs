@@ -15,7 +15,7 @@ namespace TodoListWinForms
     public partial class Form1 : Form
     {
         private TaskManager _taskManager;
-        public Form1() 
+        public Form1()
         {
             InitializeComponent();
             _taskManager = new TaskManager();
@@ -97,7 +97,7 @@ namespace TodoListWinForms
         {
             // Verifica si hay al menos una fila seleccionada
             if (dgvTareas.SelectedRows.Count > 0 )
-            {
+        {
                 // Obtiene el indice de la primera fila seleccionada
                 int selectedIndex = dgvTareas.SelectedRows[0].Index;
 
